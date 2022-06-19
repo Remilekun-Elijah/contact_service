@@ -4,7 +4,7 @@ const Mail = require('../utils/mail');
 class Notification {
   static async sendAdminMail(contact) {
     const html = `
-   <h1>New Message From ${contact.origin}</h1>
+   <h3>New Message From ${contact.origin}</h3>
    <p>Name: ${contact.name}</p>
    <p>Email: ${contact.email}</p>
    <p>Message: ${contact.message}</p>
@@ -19,7 +19,7 @@ class Notification {
 
   static async sendUsersMail(contact) {
     const html = `
-    <h1>Hello ${contact.name.split(' ')[0]}</h1>,
+    <h3>Hello ${contact.name.split(' ')[0]},</h3>
     <p>Thank you for contacting us. We will get back to you as soon as possible.</p>`;
     return await Mail.send({
       to: contact.email,
