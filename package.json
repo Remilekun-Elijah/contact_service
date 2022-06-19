@@ -1,0 +1,26 @@
+{
+  "name": "contact_me",
+  "version": "1.0.0",
+  "description": "a contact me backend for frontend developers",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Remilekun-Elijah",
+  "license": "MIT",
+  "dependencies": {
+    "consola": "^2.15.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "joi": "^17.6.0",
+    "nodemailer": "^6.7.5",
+    "nodemon": "^2.0.16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Remilekun-Elijah/contact_service.git"
+  }
+}
